@@ -1,0 +1,59 @@
+import './App.css';
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import React, { useEffect, useState } from 'react';
+
+function App() {
+  const [mapStyle, setMapStyle] = useState('mapbox://styles/mapbox/dark-v10');
+
+  useEffect(() => {
+    mapboxgl.accessToken = 'pk.eyJ1Ijoid2lkc29uIiwiYSI6ImNrbXZyZHlpdjA3dWYycHFzcTF6Z2txYTgifQ.dfzOBZeGLBKSD6lLW8uwPA';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: mapStyle,
+      center: [15.8277, -13.1339],
+      zoom: 4
+    });
+
+    // Define a function to fly to a new location
+    const flyToAngola = () => {
+      map.flyTo({
+        center: [17.8739, -11.2027],
+        zoom: 5,
+      });
+    };
+
+    // Call the flyToAngola function after the map loads
+    map.on('load', flyToAngola);
+
+  }, [mapStyle]);
+
+  // Function to handle changing the map style
+  const handleMapStyleChange = (style) => {
+    setMapStyle(style);
+  };
+
+  return (
+    <div>
+      <div id="map" style={{ width: '100%', height: '90vh' }}></div>
+      <div className="map-styles">
+        <button onClick={() => handleMapStyleChange('mapbox://styles/mapbox/dark-v10')}>
+          Dark
+        </button>
+        <button onClick={() => handleMapStyleChange('mapbox://styles/mapbox/light-v10')}>
+          Light
+        </button>
+        <button onClick={() => handleMapStyleChange('mapbox://styles/mapbox/satellite-streets-v11')}>
+          Satellite
+        </button>
+        <button onClick={() => handleMapStyleChange('mapbox://styles/mapbox/satellite-streets-v11')}>
+          Satellite streets
+        </button>
+      </div>
+    </div>
+  );
+}
+
+
+
+export default App;

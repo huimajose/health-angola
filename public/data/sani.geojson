@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "Situação sanitária Angola"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "provincia": "Bengo",
+        "capital": "Caxito",
+        "area": 39196,
+        "population": 766100,
+        "allergyName": "Malária",
+        "situacao": "Risco Moderado",
+        "casos_confirmados": 2500,
+        "mortes_confirmadas": 20,
+        "recuperados": 2000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.695,
+          -8.783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "provincia": "Luanda",
+        "capital": "Luanda",
+        "area": 1248.9,
+        "population": 9472010,
+        "allergyName": "COVID-19",
+        "situacao": "Risco Alto",
+        "casos_confirmados": 80000,
+        "mortes_confirmadas": 1500,
+        "recuperados": 70000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.234,
+          -8.836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "provincia": "Huambo",
+        "capital": "Huambo",
+        "area": 35655,
+        "population": 2300000,
+        "allergyName": "Tuberculose",
+        "situacao": "Risco Baixo",
+        "casos_confirmados": 500,
+        "mortes_confirmadas": 2,
+        "recuperados": 450
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.746,
+          -12.766
+        ]
+      }
+    },
+        {
+          "type": "Feature",
+          "properties": {
+            "provincia": "Cabinda",
+            "capital": "Cabinda",
+            "area": 7275,
+            "population": 688000,
+            "allergyName": "COVID-19",
+            "situacao": "Risco Moderado",
+            "casos_confirmados": 5000,
+            "mortes_confirmadas": 50,
+            "recuperados": 4950
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [12.189, -5.556]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "provincia": "Cabinda",
+            "capital": "Cabinda",
+            "area": 7275,
+            "population": 688000,
+            "allergyName": "Malária",
+            "situacao": "Risco Baixo",
+            "casos_confirmados": 1000,
+            "mortes_confirmadas": 5,
+            "recuperados": 950
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [12.169, -5.584]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "provincia": "Cabinda",
+            "capital": "Cabinda",
+            "area": 7275,
+            "population": 688000,
+            "allergyName": "Cólera",
+            "situacao": "Risco Alto",
+            "casos_confirmados": 3500,
+            "mortes_confirmadas": 30,
+            "recuperados": 3470
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [12.182, -5.547]
+          }
+        }
+      
+    
+  ]
+}
